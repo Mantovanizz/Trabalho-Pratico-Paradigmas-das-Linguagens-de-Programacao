@@ -16,7 +16,7 @@ Como executar
 
 Instale as dependências do Python:
 
-pip install flask
+pip install flask flask-core
 
 
 Certifique-se de ter o SWI-Prolog instalado e disponível no PATH.
@@ -36,9 +36,12 @@ Digite o nome de um aluno (ex.: joao, maria, pedro) e veja as recomendações de
 Estrutura do projeto
 projeto_recomendador/
 ├── app.py          # Backend em Flask
+
 ├── kb.pl           # Base de conhecimento Prolog
+
 ├── templates/
 │   └── index.html  # Página principal
+
 └── static/
     ├── app.js      # JavaScript
     └── styles.css  # CSS

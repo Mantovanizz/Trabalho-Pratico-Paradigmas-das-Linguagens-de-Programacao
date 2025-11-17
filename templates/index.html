@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>Recomendador de Cursos</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <main class="card">
+    <h1>Que curso eu posso fazer?</h1>
+    <p>Digite o seu nome (ex.: joao, maria, pedro)</p>
+
+    <form id="form">
+      <input id="aluno" placeholder="nome do aluno (ex.: joao)" required>
+      <button type="submit">Ver recomendações</button>
+    </form>
+
+    <section id="resultado" class="hidden">
+      <h2>Recomendações:</h2>
+      <ul id="listaCursos"></ul>
+      <p id="mensagem"></p>
+    </section>
+
+  </main>
+
+  <script src="{{ url_for('static', filename='app.js') }}" defer></script>
+</body>
+</html>

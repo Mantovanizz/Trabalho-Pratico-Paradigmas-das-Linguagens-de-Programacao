@@ -1,0 +1,20 @@
+body {
+    background: #f0f0f0;
+    font-family: Arial;
+}
+
+.card {
+    width: 400px;
+    margin: 80px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+button {
+    margin-top: 10px;
+}
+
+.hidden {
+    display: none;
+}
